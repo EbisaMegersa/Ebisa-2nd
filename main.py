@@ -14,7 +14,7 @@ TOKEN = "7313915227:AAFZGDSB6Nni_cW5XB3hZGm8tDJdvpp_SRA"
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a welcome message with an inline keyboard."""
     keyboard = [
-        [InlineKeyboardButton("Please Denote", callback_data="denote")]
+        [InlineKeyboardButton("Denote", callback_data="denote")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
